@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main_interface">
+  <grid id="27dc6" binding="main" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1300" height="461"/>
+    </constraints>
+    <properties>
+      <minimumSize width="900" height="400"/>
+      <preferredSize width="1200" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="49482" binding="memoryPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="150"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="fc41f" binding="cacheScroll">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="84f83" class="javax.swing.JTable" binding="cache">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <font name="Courier New"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="65138" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c2558" class="javax.swing.JButton" binding="run">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="&gt;&gt;&gt;"/>
+            </properties>
+          </component>
+          <component id="1e83" class="javax.swing.JButton" binding="readFile">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="Read"/>
+            </properties>
+          </component>
+          <component id="1bd5e" class="javax.swing.JButton" binding="restart">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <label value="Reset"/>
+              <text value="Reset"/>
+            </properties>
+          </component>
+          <component id="482c" class="javax.swing.JButton" binding="exit">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+          <component id="17b33" class="javax.swing.JButton" binding="IPL">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="IPL"/>
+            </properties>
+          </component>
+          <component id="6f5c0" class="javax.swing.JButton" binding="stepRun">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="&gt;"/>
+            </properties>
+          </component>
+          <component id="7497f" class="javax.swing.JButton" binding="clear">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="16" style="0"/>
+              <text value="clear"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="94021" binding="inputPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="2" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="78e19" binding="inputScroll">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="92833" class="javax.swing.JTextPane" binding="input">
+                <constraints/>
+                <properties>
+                  <font name="Andale Mono" size="12" style="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="ca203" binding="outputScroll">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b8c50" class="javax.swing.JTextArea" binding="output">
+                <constraints/>
+                <properties>
+                  <font name="Andale Mono" size="12" style="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="2ea9e" binding="instructionPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="c199" binding="guideScroll">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Andale Mono" size="11" style="0"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d73d2" class="javax.swing.JTextArea" binding="guide">
+                <constraints/>
+                <properties>
+                  <font name="Courier New" size="12" style="0"/>
+                  <text value="Note that the [,1] is optional at the end.  &#10;So the instruction might not have the ,1 at the end.&#10;----------------------------------------------------------------&#10;| OpCode8 |     Instruction        |      Description          |&#10;---------------------------------------------------------------- &#10;|   01    |  LDR r, x, address[,1] |Load Register From Memory, |&#10;|         |                        |r = 0..3,                  | &#10;|         |                        |r &lt;- c(EA)                 |&#10;|         |                        |r &lt;- c(c(EA)),if I bit set | &#10;----------------------------------------------------------------&#10;|   02    |  STR r, x, address[,1] |Store Register To Memory,  |&#10;|         |                        |r = 0..3                   |&#10;|         |                        |Memory(EA) &lt;- c(r)         |&#10;----------------------------------------------------------------&#10;|   03    |  LDA r, x, address[,1] |Load Register with Address,|&#10;|         |                        |r = 0..3                   |&#10;|         |                        |r &lt;- EA                    |&#10;----------------------------------------------------------------&#10;|   41    |  LDX x, address[,1]    |Load Index Register from   | &#10;|         |                        |Memory, x = 1..3           |&#10;|         |                        |Xx &lt;- c(EA)                | &#10;----------------------------------------------------------------&#10;|   42    |  STX x, address[,1]    |Store Index Register to    |&#10;|         |                        |Memory. X = 1..3           |&#10;|         |                        |Memory(EA) &lt;- c(Xx)        |&#10;----------------------------------------------------------------"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="84cf1" binding="Register" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8a52a" class="javax.swing.JLabel" binding="Titile">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="700" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Andale Mono" size="22" style="0"/>
+              <text value="Register Value"/>
+            </properties>
+          </component>
+          <grid id="f7f95" binding="showPanel" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b64e4" class="javax.swing.JLabel" binding="PC">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="PC"/>
+                </properties>
+              </component>
+              <component id="5330b" class="javax.swing.JLabel" binding="MAR">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="MAR"/>
+                </properties>
+              </component>
+              <component id="44b62" class="javax.swing.JLabel" binding="MBR">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="MBR"/>
+                </properties>
+              </component>
+              <component id="e3276" class="javax.swing.JLabel" binding="IR">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <focusTraversalPolicyProvider value="true"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="IR"/>
+                </properties>
+              </component>
+              <component id="4a6a5" class="javax.swing.JLabel" binding="register1">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="X1"/>
+                </properties>
+              </component>
+              <component id="9f638" class="javax.swing.JLabel" binding="register2">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="X2"/>
+                </properties>
+              </component>
+              <component id="75ec7" class="javax.swing.JLabel" binding="register3">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="X3"/>
+                </properties>
+              </component>
+              <component id="62e32" class="javax.swing.JTextField" binding="register3Value">
+                <constraints>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="d1ca3" class="javax.swing.JTextField" binding="register2Value">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="873f6" class="javax.swing.JTextField" binding="register1Value">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="679f" class="javax.swing.JTextField" binding="MARValue">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="70fd3" class="javax.swing.JTextField" binding="MBRValue">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="42b75" class="javax.swing.JTextField" binding="IRValue">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="70330" class="javax.swing.JTextField" binding="PCValue">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="15b62" class="javax.swing.JLabel" binding="R0">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="R0"/>
+                </properties>
+              </component>
+              <component id="caf1" class="javax.swing.JLabel" binding="R1">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="R1"/>
+                </properties>
+              </component>
+              <component id="7b289" class="javax.swing.JLabel" binding="R2">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="R2"/>
+                </properties>
+              </component>
+              <component id="882ef" class="javax.swing.JLabel" binding="R3">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="R3"/>
+                </properties>
+              </component>
+              <component id="23ddf" class="javax.swing.JTextField" binding="R0Value">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="a0a63" class="javax.swing.JTextField" binding="R1Value">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="cd636" class="javax.swing.JTextField" binding="R2Value">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="7c770" class="javax.swing.JTextField" binding="R3Value">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="628de" class="javax.swing.JLabel" binding="cc">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="CC"/>
+                </properties>
+              </component>
+              <component id="8b203" class="javax.swing.JTextField" binding="a0000TextField" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000"/>
+                </properties>
+              </component>
+              <component id="ea671" class="javax.swing.JLabel" binding="MFR">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="MFR"/>
+                </properties>
+              </component>
+              <component id="584a5" class="javax.swing.JTextField" binding="MFRValue">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000"/>
+                </properties>
+              </component>
+              <component id="5c601" class="javax.swing.JTextField" binding="FR1Value">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+              <component id="8dab0" class="javax.swing.JLabel" binding="FR1">
+                <constraints>
+                  <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="FR1"/>
+                </properties>
+              </component>
+              <component id="5eabe" class="javax.swing.JLabel" binding="FR0">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="FR0"/>
+                </properties>
+              </component>
+              <component id="f0e24" class="javax.swing.JTextField" binding="FR0Value">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <focusable value="true"/>
+                  <font name="Fira Code" size="16" style="0"/>
+                  <text value="0000,0000,0000,0000"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="3ae98" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="cb69d" binding="memoryScroll">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f0474" class="javax.swing.JTable" binding="memory">
+                <constraints/>
+                <properties>
+                  <enabled value="false"/>
+                  <font name="Courier New"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
