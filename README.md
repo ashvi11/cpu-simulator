@@ -1,7 +1,7 @@
 
 This design is for CSCI6461 project1.
 
-By: Kaibo Zhang, Xinlong Han, Ashvi Soni
+By: Kaibo Zhang,  Ashvi Soni, Xinlong Han
 
 # Introduction
 This a Java application that allows user to run machine language and display on user interface. It can realize five functions, which are ”LDR”, “STR”, “LDA”, “LDX” and “STX”, by receiving code from user input panel. The explanation of each instruction code and how to use this program will explain in following part. 
